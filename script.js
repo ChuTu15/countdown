@@ -1,4 +1,4 @@
-var target_date = new Date("January 1 2024, 00:00:00").getTime(); // set the countdown date
+var target_date = new Date("February 10 2024, 00:00:00").getTime(); // set the countdown date
  // set the countdown date
 var days, hours, minutes, seconds; // variables for time units
 
