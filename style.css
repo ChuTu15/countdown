@@ -120,3 +120,35 @@ body{
 	text-transform: uppercase;
 	display: inline-block;
 }
+
+/* reponsive */
+
+/* Add this media query for responsive adjustments */
+@media only screen and (max-width: 800px){
+    #countdown{ 
+        width: 80%; /* Adjust the width to make it more responsive */
+        padding: 16px 0; /* Adjust padding for smaller screens */
+    }
+
+    #countdown:before, #countdown:after {
+        display: none; /* Hide the side decorations on smaller screens */
+    }
+
+    #countdown #tiles > span{
+        width: 70px; /* Adjust the width of the countdown tiles */
+        max-width: 70px; /* Set max-width for better responsiveness */
+        font-size: 36px; /* Adjust the font size for smaller screens */
+        margin: 0 4px; /* Adjust spacing between tiles */
+        padding: 12px 0; /* Adjust padding for smaller screens */
+    }
+
+    #countdown .labels li{
+        width: 70px; /* Adjust the width of label items */
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+
+    .tet-decorations {
+        height: auto; /* Allow the height to adjust based on the content */
+        width: 100%; /* Make the decorations fill the width of the screen */
+    }
+}
